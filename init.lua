@@ -27,10 +27,10 @@ require("yaziline"):setup({
 	separator_style = "angly", -- "angly" | "curvy" | "liney" | "empty"
 	separator_open = "",
 	separator_close = "",
-	separator_open_thin = "",
-	separator_close_thin = "",
-	separator_head = "",
-	separator_tail = "",
+	separator_open_thin = "", -- "",
+	separator_close_thin = "", --"",
+	separator_head = "▊ ",
+	separator_tail = " ▊",
 	select_symbol = "",
 	yank_symbol = "󰆐",
 	filename_max_length = 24, -- truncate when filename > 24
