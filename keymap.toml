@@ -167,6 +167,9 @@ prepend_keymap = [
   # ---- toogle pane ----
   { on   = "<F3>", run  = "plugin toggle-pane min-preview", desc = "Show or hide the preview pane" },
   { on   = "<F2>", run  = "plugin toggle-pane max-preview", desc = "Maximize or restore the preview pane" },
+
+  # ---- mount ----
+  { on = "M", run = "plugin mount" },
 ]
 
 [tasks]
