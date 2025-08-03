@@ -12,7 +12,7 @@ require("starship"):setup({
 -- eza tree plugin
 require("eza-preview"):setup({
 	-- Determines the directory depth level to tree preview (default: 3)
-	level = 3,
+	level = 1,
 
 	-- Whether to follow symlinks when previewing directories (default: false)
 	follow_symlinks = false,
