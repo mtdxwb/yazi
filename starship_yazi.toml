@@ -1,6 +1,6 @@
 # version: 1.0.0
 
-add_newline = true
+add_newline = false
 continuation_prompt = "[▸▹ ](dimmed white)"
 
 format = """$hostname\
@@ -10,9 +10,9 @@ $directory\
 $localip\
 $shlvl\
 $shell\
+$git_branch\
 $git_metrics\
 $fossil_branch\
-$git_branch\
 $git_commit\
 $git_state\
 $git_status\
@@ -77,28 +77,13 @@ $azure\
 $crystal\
 $custom\
 $status\
-$battery\
-$time
-$env_var\
-$jobs\
-$sudo\
-$character"""
-
-right_format = """$cmd_duration\
-"""
-
-[fill]
-symbol = '-'
+$battery"""
 
 [character]
 format = "$symbol "
 success_symbol = "[◎](bold italic bright-yellow)"
 error_symbol = "[○](italic purple)"
 vimcmd_symbol = "[■](italic dimmed green)"
-# not supported in zsh
-vimcmd_replace_one_symbol = "◌"
-vimcmd_replace_symbol = "□"
-vimcmd_visual_symbol = "▼"
 
 [env_var.VIMSHELL]
 format = "[$env_value]($style)"
@@ -169,8 +154,7 @@ threshold = 70
 style = "italic dimmed yellow"
 
 [git_branch]
-# format = " [$branch(:$remote_branch)]($style)"
-format = " [$symbol $branch(:$remote_branch)]($style)"
+format = " [$symbol $branch(:$remote_branch)]($style) "
 symbol = "[](bold italic bright-blue)"
 style = "italic bright-blue"
 truncation_symbol = "⋯"
@@ -179,7 +163,7 @@ truncation_length = 11
 only_attached = true
 
 [git_metrics]
-format = '([▴$added]($added_style))([▿$deleted]($deleted_style))'
+format = '([▴$added]($added_style))([▿$deleted]($deleted_style)) '
 added_style = 'italic dimmed green'
 deleted_style = 'italic dimmed red'
 ignore_submodules = true
