@@ -154,7 +154,7 @@ threshold = 70
 style = "italic dimmed yellow"
 
 [git_branch]
-format = " [$symbol $branch(:$remote_branch)]($style) "
+format = " [$symbol $branch(:$remote_branch)]($style)"
 symbol = "[](bold italic bright-blue)"
 style = "italic bright-blue"
 truncation_symbol = "⋯"
@@ -163,7 +163,7 @@ truncation_length = 11
 only_attached = true
 
 [git_metrics]
-format = '([▴$added]($added_style))([▿$deleted]($deleted_style)) '
+format = '([▴$added]($added_style))([▿$deleted]($deleted_style))'
 added_style = 'italic dimmed green'
 deleted_style = 'italic dimmed red'
 ignore_submodules = true
