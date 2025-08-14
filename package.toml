@@ -1,31 +1,31 @@
 [[plugin.deps]]
 use = "Rolv-Apneseth/starship"
-rev = "6a0f3f7"
-hash = "d5a74d95c2e8194ac352c5e10e81e64f"
+rev = "a63550b"
+hash = "c2021386289a0cbb3e152a052f67c177"
 
 [[plugin.deps]]
 use = "ahkohd/eza-preview"
-rev = "7a93433"
-hash = "22e1bd3dd03894746a3540b5f3729d0c"
+rev = "43913fa"
+hash = "931a7f3452f74c1f1f499357002a1cae"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "63f9650"
-hash = "bf6f074cd41ee33c3360341d168f9733"
+rev = "e95c7b3"
+hash = "63b6c222bf2103b3023389dde5e2ecfe"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:toggle-pane"
-rev = "63f9650"
-hash = "d5d4f3527592da5fbe77fd6f51815f80"
+rev = "e95c7b3"
+hash = "d6f60c24d8c0cf57a855bf46115b2502"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "63f9650"
-hash = "c0b6cd7dc830b96e77e5c8a71eec7926"
+rev = "e95c7b3"
+hash = "e1de3054c0d1a2d8dc6f007eadc0fa31"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:no-status"
-rev = "63f9650"
+rev = "e95c7b3"
 hash = "3e023d31f29201efdac2a6ae35fedb78"
 
 [flavor]
